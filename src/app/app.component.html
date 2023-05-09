@@ -216,7 +216,7 @@
           assets/vecimarket/img/cover/01.jpg?type=image/jpeg 1x"
   alt="cover-01"
 />
-    <!-- <img src="assets/vecimarket/img/cover/01.jpg" alt="cover-01"> -->
+    <!-- <img src="assets/vecimarket/img/cover/" alt="cover-01"> -->
   </figure>
   <!-- /NAVIGATION WIDGET COVER -->
 
@@ -235,7 +235,11 @@
       <!-- USER AVATAR CONTENT -->
       <div class="user-avatar-content">
         <!-- HEXAGON -->
-        <div class="hexagon-image-82-90" data-src="assets/vecimarket/img/avatar/01.jpg"></div>
+        <picture>
+          <source srcset="assets/vecimarket/img/avatar/01.webp, assets/vecimarket/img/avatar/01.png, assets/vecimarket/img/avatar/01.jpg" type="image/webp">
+          <source srcset="assets/vecimarket/img/avatar/01.png, assets/vecimarket/img/avatar/01.jpg" type="image/png">
+          <img src="assets/vecimarket/img/avatar/01.webp" alt="Avatar">
+        </picture>
         <!-- /HEXAGON -->
       </div>
       <!-- /USER AVATAR CONTENT -->
@@ -546,8 +550,11 @@
         <!-- USER AVATAR CONTENT -->
         <div class="user-avatar-content">
           <!-- HEXAGON -->
-          <div class="hexagon-image-30-32" data-src="assets/vecimarket/img/avatar/01.jpg"></div>
-          <!-- /HEXAGON -->
+          <picture>
+            <source type="image/webp" srcset="assets/vecimarket/img/avatar/01.webp">
+            <source type="image/jpeg" srcset="assets/vecimarket/img/avatar/01.jpg">
+            <img  class="hexagon-image-30-32" src="assets/vecimarket/img/avatar/01.webp" alt="User Avata webpr">
+          </picture>   <!-- /HEXAGON -->
         </div>
         <!-- /USER AVATAR CONTENT -->
     
@@ -1221,7 +1228,7 @@
       <div class="logo">
         <!-- ICON LOGO VIKINGER -->
         <svg class="icon-logo-vikinger small">
-          <use xlink:href="#svg-logo-vikinger"></use>
+          <!-- <use xlink:href="#svg-logo-vikinger"></use> -->
         </svg>
         <!-- /ICON LOGO VIKINGER -->
       </div>
@@ -2405,7 +2412,13 @@
                     <!-- USER AVATAR CONTENT -->
                     <div class="user-avatar-content">
                       <!-- HEXAGON -->
-                      <div class="hexagon-image-30-32" data-src="assets/vecimarket/img/avatar/07.jpg"></div>
+                      <!-- <div class="hexagon-image-30-32" data-src="assets/vecimarket/img/avatar/07.jpg"></div> -->
+                      <div class="hexagon-image-30-32">
+                        <img ng-srcset="assets/vecimarket/img/avatar/07.webp, 
+                                         assets/vecimarket/img/avatar/07.jpg 1x, 
+                                         assets/vecimarket/img/avatar/07.png 2x" 
+                             alt="Avatar">
+                      </div>
                       <!-- /HEXAGON -->
                     </div>
                     <!-- /USER AVATAR CONTENT -->
@@ -3115,8 +3128,11 @@
                 <!-- USER AVATAR CONTENT -->
                 <div class="user-avatar-content">
                   <!-- HEXAGON -->
-                  <div class="hexagon-image-30-32" data-src="assets/vecimarket/img/avatar/01.jpg"></div>
-                  <!-- /HEXAGON -->
+                  <picture>
+                    <source type="image/webp" srcset="assets/vecimarket/img/avatar/01.webp">
+                    <source type="image/jpeg" srcset="assets/vecimarket/img/avatar/01.jpg">
+                    <img  class="hexagon-image-30-32" src="assets/vecimarket/img/avatar/01.webp" alt="User Avata webpr">
+                  </picture>   <!-- /HEXAGON -->
                 </div>
                 <!-- /USER AVATAR CONTENT -->
             
@@ -3479,7 +3495,15 @@
             <!-- USER AVATAR CONTENT -->
             <div class="user-avatar-content">
               <!-- HEXAGON -->
-              <div class="hexagon-image-18-20" data-src="assets/vecimarket/img/avatar/01.jpg"></div>
+              <!-- <div class="hexagon-image-18-20" data-src="assets/vecimarket/img/avatar/01.jpg"></div> -->
+              <div class="hexagon-image-18-20">
+                <img
+                  srcset="assets/vecimarket/img/avatar/01.webp?type=image/webp 1x,
+                          assets/vecimarket/img/avatar/01.png?type=image/png 1x,
+                          assets/vecimarket/img/avatar/01.jpg?type=image/jpeg 1x"
+                  alt="avatar-01"
+                />
+              </div>
               <!-- /HEXAGON -->
             </div>
             <!-- /USER AVATAR CONTENT -->
