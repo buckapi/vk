@@ -209,13 +209,17 @@
 <nav id="navigation-widget" class="navigation-widget navigation-widget-desktop sidebar left hidden" data-simplebar>
   <!-- NAVIGATION WIDGET COVER -->
   <figure class="navigation-widget-cover liquid">
-  <img
+    <img [defaultImage]="'assets/vecimarket/img/cover/01.webp'"
+    [errorImage]="'assets/vecimarket/img/cover/01.webp'"
+    [lazyLoad]="'assets/vecimarket/img/cover/01.webp'"
+    alt="Imagen">
+  <!-- <img
   src="assets/vecimarket/img/cover/01.webp"
   srcset="assets/vecimarket/img/cover/01.webp?type=image/webp 1x,
           assets/vecimarket/img/cover/01.png?type=image/png 1x,
           assets/vecimarket/img/cover/01.jpg?type=image/jpeg 1x"
   alt="cover-01"
-/>
+/> -->
     <!-- <img src="assets/vecimarket/img/cover/01.jpg" alt="cover-01"> -->
   </figure>
   <!-- /NAVIGATION WIDGET COVER -->
@@ -296,7 +300,11 @@
   <div class="badge-list small">
     <!-- BADGE ITEM -->
     <div class="badge-item">
-      <img src="assets/vecimarket/img/badge/gold-s.png" alt="badge-gold-s">
+      <img [defaultImage]="'assets/vecimarket/img/badge/gold-s.webp'"
+     [errorImage]="'assets/vecimarket/img/badge/gold-s.webp'"
+     [lazyLoad]="'assets/vecimarket/img/badge/gold-s.webp'"
+     alt="Imagen">
+      <!-- <img src="assets/vecimarket/img/badge/gold-s.png" alt="badge-gold-s"> -->
     </div>
     <!-- /BADGE ITEM -->
 
@@ -1718,13 +1726,21 @@
                 <a class="cart-item-preview-image" href="marketplace-product.html">
                   <!-- PICTURE -->
                   <figure class="picture medium round liquid">
-                    <img  src="assets/vecimarket/img/marketplace/items/01.webp"
+                    <!-- <img  src="assets/vecimarket/img/marketplace/items/01.webp"
                       srcset="assets/vecimarket/img/marketplace/items/01.webp?type=image/webp,
                               assets/vecimarket/img/marketplace/items/01.png?type=image/png,
                               assets/vecimarket/img/marketplace/items/01.jpg?type=image/jpeg"
                       alt="item-01"
-                    >
+                    > -->
+                    <img [defaultImage]="'assets/vecimarket/img/marketplace/items/01.webp'"
+                    [errorImage]="'assets/vecimarket/img/marketplace/items/01.webp'"
+                    [lazyLoad]="'assets/vecimarket/img/marketplace/items/01.webp'"
+                    alt="Imagen">
                   </figure>
+
+                 
+
+
                   <!-- /PICTURE -->
                 </a>
                 <!-- /CART ITEM PREVIEW IMAGE -->
